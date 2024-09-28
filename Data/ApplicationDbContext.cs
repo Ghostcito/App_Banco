@@ -10,5 +10,5 @@ public class ApplicationDbContext : IdentityDbContext
     {
 
     }
-    public DbSet<App_Banco.Models.Cuenta> DataCliente { get; set; }
+    public DbSet<App_Banco.Models.Cuenta> DataCuenta { get; set; }
 }
