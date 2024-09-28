@@ -263,3 +263,4 @@ D:\Administrador\Programacion 1\App_Banco\obj\Debug\net8.0\refint\App_Banco.dll
 D:\Administrador\Programacion 1\App_Banco\obj\Debug\net8.0\App_Banco.pdb
 D:\Administrador\Programacion 1\App_Banco\obj\Debug\net8.0\App_Banco.genruntimeconfig.cache
 D:\Administrador\Programacion 1\App_Banco\obj\Debug\net8.0\ref\App_Banco.dll
+D:\Administrador\Programacion 1\App_Banco\obj\Debug\net8.0\App_Banco.sourcelink.json

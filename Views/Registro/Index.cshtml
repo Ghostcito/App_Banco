@@ -1,0 +1,40 @@
+@model App_Banco.Models.Cuenta
+
+<div class="container">
+    <h2>Registro de cuenta bancaria</h2>
+    <form method="post" asp-controller="Registro" asp-action="Create">
+        <div class="form-group">
+            <label asp-for="Nombre" class="control-label"></label>
+            <input required asp-for="Nombre" class="form-control" />
+        </div>
+        <br>
+        <div class="form-group">
+            <label asp-for="Apellidos" class="control-label"></label>
+            <input required asp-for="Apellidos" class="form-control" />
+        </div>
+        <br>
+        <div class="form-group">
+            <label asp-for="TipoCuenta" class="control-label">Elegir tipo de cuenta</label>
+            <input required asp-for="TipoCuenta" class="form-control" />
+        </div>
+        <br>
+        <div class="form-group">
+            <label asp-for="Email" class="control-label"></label>
+            <input required type="email" asp-for="Email" class="form-control"></input>
+        </div>
+        <br>
+        <div class="form-group">
+            <label asp-for="Monto" class="control-label">Monto Inicial</label>
+            <input required type="number" asp-for="Monto" class="form-control"></input>
+        </div>
+        <br>
+        <div class="form-group">
+            <input type="submit" value="Enviar" class="btn btn-primary" />
+        </div>
+    </form>
+
+    <div>
+        <a asp-controller="Cuentas" asp-action="Index">Regresar a lista de Cuentas</a>
+    </div>
+
+</div>

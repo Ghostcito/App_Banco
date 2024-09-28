@@ -1,0 +1,33 @@
+@model IEnumerable<App_Banco.Models.Cuenta>
+@{
+    ViewData["Title"] = "Cuentas bancarias registradas";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido</h1>
+    <br>
+    <h2>@ViewData["Title"]</h2>
+</div>
+<a class="btn btn-success mb-3" asp-controller="Registro" asp-action="Index">REGISTRAR UNA NUEVA CUENTA</a>
+<br>
+<div class="row justify-content-center">
+    <table class="table table-striped table-bordered table-haver">
+        <thead>
+            <td>Nombre</td>
+            <td>Apllidos</td>
+            <td>Tipo de cuenta</td>
+            <td>Email</td>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Apellidos)</td>
+                    <td>@Html.DisplayFor(modelItem => item.TipoCuenta)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
