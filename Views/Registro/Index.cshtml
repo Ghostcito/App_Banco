@@ -2,6 +2,7 @@
 
 <div class="container">
     <h2>Registro de cuenta bancaria</h2>
+    <br>
     <form method="post" asp-controller="Registro" asp-action="Create">
         <div class="form-group">
             <label asp-for="Nombre" class="control-label"></label>
@@ -14,8 +15,11 @@
         </div>
         <br>
         <div class="form-group">
-            <label asp-for="TipoCuenta" class="control-label">Elegir tipo de cuenta</label>
-            <input required asp-for="TipoCuenta" class="form-control" />
+            <label asp-for="TipoCuenta">Tipo de cuenta</label>
+            <select required asp-for="TipoCuenta" class="form-control">
+                <option asp-for="TipoCuenta" value="Cuenta de ahorro">Cuenta de ahorro</option>
+                <option asp-for="TipoCuenta" value="Cuenta a plazo fijo">Cuenta a plazo fijo</option>
+            </select>
         </div>
         <br>
         <div class="form-group">
@@ -32,9 +36,9 @@
             <input type="submit" value="Enviar" class="btn btn-primary" />
         </div>
     </form>
-
+    <br>
     <div>
-        <a asp-controller="Cuentas" asp-action="Index">Regresar a lista de Cuentas</a>
+        <a asp-controller="Cuentas" asp-action="Index"> <- Regresar a lista de Cuentas</a>
     </div>
 
 </div>
